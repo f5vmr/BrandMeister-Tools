@@ -1,0 +1,18 @@
+import json
+array = []
+with open('tg_index.txt', 'r') as data:
+	for line in data:
+		line = line.strip()
+		ldata = line.split(';')
+		temp_array = {
+			"id": ldata[0],
+			"callsign": ldata[1],
+			"tgid": "TG " + ldata[0]
+		}
+		array.append(temp_array)
+with open('talkgroup_ids.json', 'w') as fp:
+	results = {'results': array}
+	json.dump(results, fp,ensure_ascii=False, indent=4)
+#from pprint import pprint
+#pprint(results)
+
