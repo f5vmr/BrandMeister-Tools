@@ -8,7 +8,7 @@ sed -i 's/: /;/g' tg_index.txt
 sed -i 's/,//g' tg_index.txt
 sed -i 's/Zeland/Zealand/g' tg_index.txt
 sed -i 's/Διεθνές Ελλάδα/Greece National/g' tg_index.txt
-sed -i 's/UK Call - QSY to 2351 or 2352/UK Calling /g' tg_index.txt
+sed -i 's/UK Call - QSY to 2351 or 2352/UK Wide /g' tg_index.txt
 sed -i 's/Tac 310 NOT A CALL CHANNEL/Tac 310 USA/g' tg_index.txt
 sed -i 's/UK & Phoenix - QSY to 2353/UK Calling \& I\/B from IPSC2-E/g' tg_index.txt
 sed -i 's+\\r\\n++g' tg_index.txt
